@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900&subset=latin-ext");
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+}
+
+body .container {
+  max-width: 1920px;
+}
+
+body .container a:hover {
+  text-decoration: none;
+}
+
+header {
+  background: #18335b url("../img/bg.jpeg") no-repeat center/cover;
+  padding: 50px 15px;
+}
+
+header .container {
+  text-align: center;
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+
+@media (max-width: 1199px) {
+  header .container {
+    padding-bottom: 45px;
+    padding-top: 60px;
+  }
+}
+
+@media (max-width: 991px) {
+  header .container {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  header .container {
+    padding-top: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  header .container {
+    padding-top: 10px;
+  }
+}
+
+header .container h1 {
+  font-size: 57px;
+  color: #ffffff;
+  font-weight: 600;
+  line-height: 62px;
+  margin-bottom: 26px;
+}
+
+@media (max-width: 1599px) {
+  header .container h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 1199px) {
+  header .container h1 {
+    font-size: 47px;
+  }
+}
+
+@media (max-width: 991px) {
+  header .container h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+}
+
+@media (max-width: 767px) {
+  header .container h1 {
+    font-size: 37px;
+  }
+}
+
+@media (max-width: 640px) {
+  header .container h1 {
+    line-height: 1.1;
+    font-size: 33px;
+  }
+}
+
+.about-us {
+  padding: 50px 15px;
+}
+
+.about-us .container {
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.equipment {
+  padding: 50px 15px;
+}
+
+.equipment .container {
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.equipment .container h2 {
+  padding: 20px 0;
+}
+
+.equipment .container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.equipment .container ul li {
+  padding: 10px 0;
+}
+
+.equipment .container ul li i {
+  padding-right: 10px;
+}
+
+.products {
+  padding: 50px 0;
+}
+
+.price-list {
+  padding: 50px 15px;
+}
+
+.price-list .container {
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.price-list .container h2 {
+  padding: 20px 0;
+}
+
+.price-list .container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.price-list .container ul li {
+  padding: 10px 0;
+}
+
+.price-list .container ul li i {
+  padding-right: 10px;
+}
+
+.services {
+  padding: 50px 15px;
+}
+
+.services .container {
+  border: 1px solid black;
+  padding: 30px;
+}
+
+.services .container h2 {
+  padding: 20px 0;
+}
+
+.services .container ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services .container ul li {
+  padding: 10px 0;
+}
+
+.services .container ul li i {
+  padding-right: 10px;
+}
+
+.contact {
+  padding: 50px 15px;
+}
+
+.contact .container {
+  border: 1px solid black;
+  padding: 30px;
+}
+
+footer {
+  padding: 50px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
