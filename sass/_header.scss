@@ -1,0 +1,67 @@
+header {
+    background: $tertiaryColor url("../img/bg.jpeg") no-repeat center/cover;
+    padding: 50px 15px;
+
+   
+
+    .container {
+        text-align: center;
+        padding-top: 90px;
+        padding-bottom: 70px;
+
+        
+
+        @media (max-width: 1199px) {
+          padding-bottom: 45px;
+          padding-top: 60px;
+        }
+
+        @media (max-width: 991px) {
+          padding-top: 30px;
+        }
+
+        @media (max-width: 767px) {
+          padding-top: 20px;
+        }
+
+        @media (max-width: 640px) {
+          padding-top: 10px;
+        }
+
+
+        h1 {
+            font-size: 57px;
+            color: $primaryColor;
+            font-weight: 600;
+            line-height: 62px;
+            margin-bottom: 26px;
+
+            @media (max-width: 1599px) {
+              font-size: 52px;
+            }
+
+            @media (max-width: 1199px) {
+              font-size: 47px;
+            }
+
+            @media (max-width: 991px) {
+              font-size: 42px;
+              line-height: 52px;
+            }
+
+            @media (max-width: 767px) {
+              font-size: 37px;
+            }
+
+            @media (max-width: 640px) {
+              line-height: 1.1;
+              font-size: 33px;
+            }
+        }
+
+
+    
+
+     
+    }
+}

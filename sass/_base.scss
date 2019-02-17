@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900&subset=latin-ext');
+
+$primaryFont: 'Titillium Web', sans-serif;
+
+$primaryColor: #ffffff;
+$secondaryColor: #f4f4f4;
+$tertiaryColor: #18335b;
+$quaternaryColor: #d71149;
+$quinaryColor: #d4d4d4;
+$senaryColor: #122656;
+$septenaryColor: #919191;
+$octonaryColor: #919daf;
+$nonaryColor: #44547a;
+$denaryColor: #b9c1cd;
+
+$duodenaryColor: #97d1ff;
+
+$vigenaryColor: #9f9f9f;
+
+$lightenQuaternaryColor: darken($quaternaryColor, 5%);
+
+$gradientLeftColor: #102259;
+$gradientRightColor: #164271;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $primaryFont;
+  text-align: center;
+
+  
+
+  .container {
+    max-width: 1920px;
+
+    a {
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
