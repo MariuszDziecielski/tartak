@@ -2,8 +2,67 @@
   padding: 50px 0;
 
   .container {
-    
- 
+    width: 100%;
+
+    .row {
+      .col-lg-4 {
+        height: 236px;
+        width: calc(33.33333333% - 10px);
+        margin: 0 5px;
+
+        position: relative;
+
+
+
+        &:nth-of-type(1) {
+          background: #18335b url(../img/deska.jpg) no-repeat center/cover;
+        }
+
+        &:nth-of-type(2) {
+          background: #18335b url(../img/wierzby.jpeg) no-repeat center/cover;
+        }
+
+        &:nth-of-type(4) {
+          background: #18335b url(../img/laty.jpg) no-repeat center/cover;
+        }
+
+        &:nth-of-type(7) {
+          background: #18335b url(../img/kontrlaty.jpg) no-repeat center/cover;
+        }
+
+        &:nth-of-type(9) {
+          background: #18335b url(../img/tarcica.JPG) no-repeat center/cover;
+        }
+
+        &:nth-of-type(10) {
+          background: #18335b url(../img/scinki.jpg) no-repeat center/cover;
+        }
+
+//  bez tego???????
+        &:nth-of-type(14) {
+          background: #18335b url(../img/sztachety.jpg) no-repeat center/cover;
+
+          display: none;
+        }
+
+
+
+        h3 {
+          color: $primaryColor;
+
+          position: absolute;
+          bottom: 27px;
+          left: 47px;
+          font-size: 34px;
+        }
+      }
+
+      .clearfix {
+        margin-bottom: 10px;
+      }
+    }
+
+
 
     h1 {
 
@@ -11,7 +70,7 @@
     }
 
     @media (max-width: 991px) {
-   
+
     }
 
 

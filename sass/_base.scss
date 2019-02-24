@@ -1,8 +1,14 @@
-@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900&subset=latin-ext');
 
-$primaryFont: 'Titillium Web', sans-serif;
+
+
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
+
+$primaryFont: 'Lato', sans-serif;
 
 $primaryColor: #ffffff;
+
+
+
 $secondaryColor: #f4f4f4;
 $tertiaryColor: #18335b;
 $quaternaryColor: #d71149;
@@ -29,16 +35,22 @@ $gradientRightColor: #164271;
 body {
   font-family: $primaryFont;
   text-align: center;
+  font-size: 16px;
 
   
 
   .container {
     max-width: 1920px;
+    margin: 0 auto;
 
     a {
       &:hover {
         text-decoration: none;
       }
+    }
+
+    p {
+      line-height: 24px;
     }
   }
 }
