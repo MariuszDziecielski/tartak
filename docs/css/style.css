@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700,900&subset=latin-ext");
+@import url("https://fonts.googleapis.com/css?family=Lato:400,700,900");
 body {
   margin: 0;
   padding: 0;
@@ -9,27 +9,36 @@ body {
 }
 
 body {
-  font-family: "Titillium Web", sans-serif;
+  font-family: "Lato", sans-serif;
   text-align: center;
+  font-size: 16px;
 }
 
 body .container {
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 body .container a:hover {
   text-decoration: none;
 }
 
+body .container p {
+  line-height: 24px;
+}
+
 header {
   background: #18335b url("../img/bg.jpeg") no-repeat center/cover;
   padding: 50px 15px;
+  color: #ffffff;
 }
 
 header .container {
   text-align: center;
   padding-top: 90px;
   padding-bottom: 70px;
+  padding: 300px 180px;
+  max-width: 900px;
 }
 
 @media (max-width: 1199px) {
@@ -59,7 +68,6 @@ header .container {
 
 header .container h1 {
   font-size: 57px;
-  color: #ffffff;
   font-weight: 600;
   line-height: 62px;
   margin-bottom: 26px;
@@ -97,13 +105,49 @@ header .container h1 {
   }
 }
 
+header .container p {
+  line-height: 29px;
+}
+
 .about-us {
-  padding: 50px 15px;
+  padding: 150px 15px;
 }
 
 .about-us .container {
-  border: 1px solid black;
-  padding: 30px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 0 180px 30px;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.about-us .container h1 {
+  margin-top: 0;
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 34px;
+  display: inline-block;
+  position: relative;
+}
+
+.about-us .container h1:after {
+  left: 100%;
+  margin-left: 100px;
+}
+
+.about-us .container h1::before {
+  right: 100%;
+  margin-right: 100px;
+}
+
+.about-us .container h1:after, .about-us .container h1:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-top: 2px solid black;
+  top: 0;
+  width: 700px;
 }
 
 .equipment {
@@ -111,8 +155,40 @@ header .container h1 {
 }
 
 .equipment .container {
-  border: 1px solid black;
-  padding: 30px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 0 180px 30px;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.equipment .container h1 {
+  margin-top: 0;
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 34px;
+  display: inline-block;
+  position: relative;
+}
+
+.equipment .container h1:after {
+  left: 100%;
+  margin-left: 100px;
+}
+
+.equipment .container h1::before {
+  right: 100%;
+  margin-right: 100px;
+}
+
+.equipment .container h1:after, .equipment .container h1:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-top: 2px solid black;
+  top: 0;
+  width: 700px;
 }
 
 .equipment .container h2 {
@@ -136,13 +212,97 @@ header .container h1 {
   padding: 50px 0;
 }
 
+.products .container {
+  width: 100%;
+}
+
+.products .container .row .col-lg-4 {
+  height: 236px;
+  width: calc(33.33333333% - 10px);
+  margin: 0 5px;
+  position: relative;
+}
+
+.products .container .row .col-lg-4:nth-of-type(1) {
+  background: #18335b url(../img/deska.jpg) no-repeat center/cover;
+}
+
+.products .container .row .col-lg-4:nth-of-type(2) {
+  background: #18335b url(../img/wierzby.jpeg) no-repeat center/cover;
+}
+
+.products .container .row .col-lg-4:nth-of-type(4) {
+  background: #18335b url(../img/laty.jpg) no-repeat center/cover;
+}
+
+.products .container .row .col-lg-4:nth-of-type(7) {
+  background: #18335b url(../img/kontrlaty.jpg) no-repeat center/cover;
+}
+
+.products .container .row .col-lg-4:nth-of-type(9) {
+  background: #18335b url(../img/tarcica.JPG) no-repeat center/cover;
+}
+
+.products .container .row .col-lg-4:nth-of-type(10) {
+  background: #18335b url(../img/scinki.jpg) no-repeat center/cover;
+}
+
+.products .container .row .col-lg-4:nth-of-type(14) {
+  background: #18335b url(../img/sztachety.jpg) no-repeat center/cover;
+  display: none;
+}
+
+.products .container .row .col-lg-4 h3 {
+  color: #ffffff;
+  position: absolute;
+  bottom: 27px;
+  left: 47px;
+  font-size: 34px;
+}
+
+.products .container .row .clearfix {
+  margin-bottom: 10px;
+}
+
 .price-list {
   padding: 50px 15px;
 }
 
 .price-list .container {
-  border: 1px solid black;
-  padding: 30px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 0 180px 30px;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.price-list .container h1 {
+  margin-top: 0;
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 34px;
+  display: inline-block;
+  position: relative;
+}
+
+.price-list .container h1:after {
+  left: 100%;
+  margin-left: 100px;
+}
+
+.price-list .container h1::before {
+  right: 100%;
+  margin-right: 100px;
+}
+
+.price-list .container h1:after, .price-list .container h1:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-top: 2px solid black;
+  top: 0;
+  width: 700px;
 }
 
 .price-list .container h2 {
@@ -167,8 +327,40 @@ header .container h1 {
 }
 
 .services .container {
-  border: 1px solid black;
-  padding: 30px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 0 180px 30px;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.services .container h1 {
+  margin-top: 0;
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 34px;
+  display: inline-block;
+  position: relative;
+}
+
+.services .container h1:after {
+  left: 100%;
+  margin-left: 100px;
+}
+
+.services .container h1::before {
+  right: 100%;
+  margin-right: 100px;
+}
+
+.services .container h1:after, .services .container h1:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-top: 2px solid black;
+  top: 0;
+  width: 700px;
 }
 
 .services .container h2 {
@@ -193,8 +385,40 @@ header .container h1 {
 }
 
 .contact .container {
-  border: 1px solid black;
-  padding: 30px;
+  border-bottom: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  padding: 0 180px 30px;
+  max-width: 900px;
+  overflow: hidden;
+}
+
+.contact .container h1 {
+  margin-top: 0;
+  padding-bottom: 30px;
+  font-weight: 600;
+  font-size: 34px;
+  display: inline-block;
+  position: relative;
+}
+
+.contact .container h1:after {
+  left: 100%;
+  margin-left: 100px;
+}
+
+.contact .container h1::before {
+  right: 100%;
+  margin-right: 100px;
+}
+
+.contact .container h1:after, .contact .container h1:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-top: 2px solid black;
+  top: 0;
+  width: 700px;
 }
 
 footer {
