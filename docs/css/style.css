@@ -14,31 +14,110 @@ body {
   font-size: 16px;
 }
 
+body h1 {
+  letter-spacing: 7px;
+}
+
 body .container {
   max-width: 1920px;
   margin: 0 auto;
 }
 
+@media (max-width: 991px) {
+  body .container {
+    max-width: 100%;
+  }
+}
+
+body .container .lines-container {
+  margin-top: 0;
+  padding-bottom: 94px;
+  display: inline-block;
+  position: relative;
+}
+
+body .container .lines-container:after {
+  left: 100%;
+  margin-left: 200px;
+}
+
+@media (max-width: 767px) {
+  body .container .lines-container:after {
+    margin-left: 184px;
+  }
+}
+
+@media (max-width: 640px) {
+  body .container .lines-container:after {
+    margin-left: 150px;
+  }
+}
+
+@media (max-width: 479px) {
+  body .container .lines-container:after {
+    margin-left: 117px;
+  }
+}
+
+body .container .lines-container::before {
+  right: 100%;
+  margin-right: 200px;
+}
+
+@media (max-width: 767px) {
+  body .container .lines-container::before {
+    margin-right: 184px;
+  }
+}
+
+@media (max-width: 640px) {
+  body .container .lines-container::before {
+    margin-right: 150px;
+  }
+}
+
+@media (max-width: 479px) {
+  body .container .lines-container::before {
+    margin-right: 117px;
+  }
+}
+
+body .container .lines-container:after, body .container .lines-container:before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  border-top: 2px solid #000000;
+  top: 0;
+  width: 700px;
+}
+
+body .container h2 {
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 4px;
+}
+
 body .container a:hover {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 body .container p {
   line-height: 24px;
+  margin-bottom: 25px;
 }
 
 header {
-  background: #18335b url("../img/bg.jpeg") no-repeat center/cover;
-  padding: 50px 15px;
+  background: #18335b url("../img/26.jpeg") no-repeat center/cover;
+  padding: 120px 15px;
   color: #ffffff;
 }
 
 header .container {
   text-align: center;
-  padding-top: 90px;
-  padding-bottom: 70px;
-  padding: 300px 180px;
+  padding: 300px 180px 258px;
   max-width: 900px;
+  text-shadow: 2px 2px 4px #000000;
+  position: relative;
 }
 
 @media (max-width: 1199px) {
@@ -56,13 +135,19 @@ header .container {
 
 @media (max-width: 767px) {
   header .container {
-    padding-top: 20px;
+    padding: 0 19vw;
   }
 }
 
 @media (max-width: 640px) {
   header .container {
-    padding-top: 10px;
+    padding: 0 14vw;
+  }
+}
+
+@media (max-width: 640px) {
+  header .container {
+    padding: 0 4vw;
   }
 }
 
@@ -70,37 +155,43 @@ header .container h1 {
   font-size: 57px;
   font-weight: 600;
   line-height: 62px;
-  margin-bottom: 26px;
+  margin-bottom: 33px;
+  letter-spacing: 11px;
+}
+
+@media (max-width: 1800px) {
+  header .container h1 {
+    font-size: 53px;
+    line-height: 1.1;
+  }
 }
 
 @media (max-width: 1599px) {
   header .container h1 {
-    font-size: 52px;
+    font-size: 49px;
+  }
+}
+
+@media (max-width: 1366px) {
+  header .container h1 {
+    font-size: 45px;
   }
 }
 
 @media (max-width: 1199px) {
   header .container h1 {
-    font-size: 47px;
+    font-size: 41px;
   }
 }
 
 @media (max-width: 991px) {
   header .container h1 {
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 37px;
   }
 }
 
 @media (max-width: 767px) {
   header .container h1 {
-    font-size: 37px;
-  }
-}
-
-@media (max-width: 640px) {
-  header .container h1 {
-    line-height: 1.1;
     font-size: 33px;
   }
 }
@@ -109,86 +200,196 @@ header .container p {
   line-height: 29px;
 }
 
+header .container .icon-scroll,
+header .container .icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+header .container .icon-scroll {
+  width: 22px;
+  height: 38px;
+  margin-left: -11px;
+  bottom: 62px;
+  margin-top: -19px;
+  box-shadow: inset 0 0 0 2px #fff;
+  border-radius: 25px;
+}
+
+@media (max-width: 1199px) {
+  header .container .icon-scroll {
+    bottom: -36px;
+  }
+}
+
+header .container .icon-scroll:before {
+  content: '';
+  width: 4px;
+  height: 9px;
+  background: #fff;
+  margin-left: -2px;
+  top: 4px;
+  border-radius: 2px;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-name: scroll;
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(17px);
+  }
+}
+
 .about-us {
-  padding: 150px 15px;
+  padding: 80px 15px 130px;
+  color: #000000;
+}
+
+@media (max-width: 991px) {
+  .about-us {
+    padding: 80px 30px 130px;
+  }
+}
+
+.about-us h1 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 34px;
+  position: relative;
+  top: 26px;
+}
+
+@media (max-width: 1800px) {
+  .about-us h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 1599px) {
+  .about-us h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .about-us h1 {
+    font-size: 28px;
+  }
 }
 
 .about-us .container {
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
   padding: 0 180px 30px;
   max-width: 900px;
   overflow: hidden;
 }
 
-.about-us .container h1 {
-  margin-top: 0;
-  padding-bottom: 30px;
-  font-weight: 600;
-  font-size: 34px;
-  display: inline-block;
-  position: relative;
+@media (max-width: 991px) {
+  .about-us .container {
+    max-width: 100%;
+  }
 }
 
-.about-us .container h1:after {
-  left: 100%;
-  margin-left: 100px;
+@media (max-width: 767px) {
+  .about-us .container {
+    padding: 0 19vw 30px;
+  }
 }
 
-.about-us .container h1::before {
-  right: 100%;
-  margin-right: 100px;
+@media (max-width: 640px) {
+  .about-us .container {
+    padding: 0 14vw 30px;
+  }
 }
 
-.about-us .container h1:after, .about-us .container h1:before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  border-top: 2px solid black;
-  top: 0;
-  width: 700px;
+.about-us .container .lines-container {
+  padding-bottom: 65px;
 }
 
 .equipment {
-  padding: 50px 15px;
+  background: #18335b url("../img/4.jpg") no-repeat center/cover;
+  padding: 80px 15px 130px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media (max-width: 991px) {
+  .equipment {
+    padding: 80px 30px 130px;
+  }
+}
+
+.equipment h1 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 34px;
+  position: relative;
+  top: 26px;
+}
+
+@media (max-width: 1800px) {
+  .equipment h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 1599px) {
+  .equipment h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .equipment h1 {
+    font-size: 28px;
+  }
 }
 
 .equipment .container {
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
   padding: 0 180px 30px;
   max-width: 900px;
   overflow: hidden;
 }
 
-.equipment .container h1 {
-  margin-top: 0;
-  padding-bottom: 30px;
-  font-weight: 600;
-  font-size: 34px;
-  display: inline-block;
-  position: relative;
+@media (max-width: 991px) {
+  .equipment .container {
+    max-width: 100%;
+  }
 }
 
-.equipment .container h1:after {
-  left: 100%;
-  margin-left: 100px;
+@media (max-width: 767px) {
+  .equipment .container {
+    padding: 0 19vw 30px;
+  }
 }
 
-.equipment .container h1::before {
-  right: 100%;
-  margin-right: 100px;
+@media (max-width: 640px) {
+  .equipment .container {
+    padding: 0 14vw 30px;
+  }
 }
 
-.equipment .container h1:after, .equipment .container h1:before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  border-top: 2px solid black;
-  top: 0;
-  width: 700px;
+.equipment .container .lines-container:after, .equipment .container .lines-container:before {
+  border-top: 2px solid #ffffff;
+}
+
+.equipment .container img {
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .equipment .container h2 {
@@ -198,6 +399,7 @@ header .container p {
 .equipment .container ul {
   list-style-type: none;
   padding: 0;
+  line-height: 30px;
 }
 
 .equipment .container ul li {
@@ -208,12 +410,22 @@ header .container p {
   padding-right: 10px;
 }
 
+.equipment .container ul li a {
+  color: #ffffff;
+}
+
+.equipment .container ul li a:hover {
+  color: #cccccc;
+}
+
 .products {
   padding: 50px 0;
+  display: none;
 }
 
 .products .container {
   width: 100%;
+  text-shadow: 2px 2px 4px #000000;
 }
 
 .products .container .row .col-lg-4 {
@@ -265,44 +477,74 @@ header .container p {
 }
 
 .price-list {
-  padding: 50px 15px;
+  padding: 80px 15px 130px;
+}
+
+@media (max-width: 991px) {
+  .price-list {
+    padding: 80px 30px 130px;
+  }
+}
+
+.price-list h1 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 34px;
+  position: relative;
+  top: 26px;
+}
+
+@media (max-width: 1800px) {
+  .price-list h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 1599px) {
+  .price-list h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .price-list h1 {
+    font-size: 28px;
+  }
 }
 
 .price-list .container {
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
   padding: 0 180px 30px;
   max-width: 900px;
   overflow: hidden;
 }
 
-.price-list .container h1 {
-  margin-top: 0;
-  padding-bottom: 30px;
-  font-weight: 600;
-  font-size: 34px;
-  display: inline-block;
-  position: relative;
+@media (max-width: 991px) {
+  .price-list .container {
+    max-width: 100%;
+  }
 }
 
-.price-list .container h1:after {
-  left: 100%;
-  margin-left: 100px;
+@media (max-width: 767px) {
+  .price-list .container {
+    padding: 0 19vw 30px;
+  }
 }
 
-.price-list .container h1::before {
-  right: 100%;
-  margin-right: 100px;
+@media (max-width: 640px) {
+  .price-list .container {
+    padding: 0 14vw 30px;
+  }
 }
 
-.price-list .container h1:after, .price-list .container h1:before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  border-top: 2px solid black;
-  top: 0;
-  width: 700px;
+.price-list .container img {
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .price-list .container h2 {
@@ -312,6 +554,12 @@ header .container p {
 .price-list .container ul {
   list-style-type: none;
   padding: 0;
+  padding-bottom: 89px;
+  line-height: 30px;
+}
+
+.price-list .container ul:last-child {
+  padding-bottom: 0;
 }
 
 .price-list .container ul li {
@@ -323,48 +571,86 @@ header .container p {
 }
 
 .services {
-  padding: 50px 15px;
+  background: #18335b url("../img/2.jpeg") no-repeat center/cover;
+  padding: 80px 15px 130px;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px #000000;
+}
+
+@media (max-width: 991px) {
+  .services {
+    padding: 80px 30px 130px;
+  }
+}
+
+.services h1 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 34px;
+  position: relative;
+  top: 26px;
+}
+
+@media (max-width: 1800px) {
+  .services h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 1599px) {
+  .services h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .services h1 {
+    font-size: 28px;
+  }
 }
 
 .services .container {
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #ffffff;
   padding: 0 180px 30px;
   max-width: 900px;
   overflow: hidden;
 }
 
-.services .container h1 {
-  margin-top: 0;
-  padding-bottom: 30px;
-  font-weight: 600;
-  font-size: 34px;
-  display: inline-block;
-  position: relative;
+@media (max-width: 991px) {
+  .services .container {
+    max-width: 100%;
+  }
 }
 
-.services .container h1:after {
-  left: 100%;
-  margin-left: 100px;
+@media (max-width: 767px) {
+  .services .container {
+    padding: 0 19vw 30px;
+  }
 }
 
-.services .container h1::before {
-  right: 100%;
-  margin-right: 100px;
+@media (max-width: 640px) {
+  .services .container {
+    padding: 0 14vw 30px;
+  }
 }
 
-.services .container h1:after, .services .container h1:before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  border-top: 2px solid black;
-  top: 0;
-  width: 700px;
+.services .container .lines-container:after, .services .container .lines-container:before {
+  border-top: 2px solid #ffffff;
+}
+
+.services .container img {
+  width: 70px;
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 10px;
 }
 
 .services .container h2 {
   padding: 20px 0;
+  margin-bottom: 0;
 }
 
 .services .container ul {
@@ -378,51 +664,95 @@ header .container p {
 
 .services .container ul li i {
   padding-right: 10px;
+  font-size: 16px;
 }
 
 .contact {
-  padding: 50px 15px;
+  padding: 80px 15px 0;
+}
+
+@media (max-width: 991px) {
+  .contact {
+    padding: 80px 30px 0;
+  }
+}
+
+.contact h1 {
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 34px;
+  position: relative;
+  top: 26px;
+}
+
+@media (max-width: 1800px) {
+  .contact h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 1599px) {
+  .contact h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .contact h1 {
+    font-size: 28px;
+  }
 }
 
 .contact .container {
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
+  border-bottom: 2px solid #000000;
+  border-left: 2px solid #000000;
+  border-right: 2px solid #000000;
   padding: 0 180px 30px;
   max-width: 900px;
   overflow: hidden;
 }
 
-.contact .container h1 {
-  margin-top: 0;
-  padding-bottom: 30px;
-  font-weight: 600;
-  font-size: 34px;
-  display: inline-block;
-  position: relative;
+@media (max-width: 991px) {
+  .contact .container {
+    max-width: 100%;
+  }
 }
 
-.contact .container h1:after {
-  left: 100%;
-  margin-left: 100px;
+@media (max-width: 767px) {
+  .contact .container {
+    padding: 0 19vw 30px;
+  }
 }
 
-.contact .container h1::before {
-  right: 100%;
-  margin-right: 100px;
+@media (max-width: 640px) {
+  .contact .container {
+    padding: 0 14vw 30px;
+  }
 }
 
-.contact .container h1:after, .contact .container h1:before {
-  content: "";
-  position: absolute;
-  height: 2px;
-  border-top: 2px solid black;
-  top: 0;
-  width: 700px;
+.contact .container .lines-container {
+  padding-bottom: 65px;
+}
+
+.contact .container address a {
+  color: #000000;
+}
+
+.contact .container address a:hover {
+  color: #807f7f;
 }
 
 footer {
-  padding: 50px 0;
+  padding: 71px 0;
+}
+
+footer .container p a {
+  color: #000000;
+}
+
+footer .container p a:hover {
+  color: #807f7f;
 }
 
 /*# sourceMappingURL=style.css.map */
