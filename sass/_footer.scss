@@ -1,7 +1,16 @@
 footer {
-  padding: 50px 0;
+  padding: 71px 0;
 
   .container {
+    p {
+      a {
+        color: $secondaryColor;
+
+        &:hover {
+          color: $lightenSecondaryColor;
+        }
+      }
+    }
     @media (max-width: 991px) {
    
     }

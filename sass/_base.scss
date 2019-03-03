@@ -1,32 +1,18 @@
-
-
-
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
 
 $primaryFont: 'Lato', sans-serif;
 
 $primaryColor: #ffffff;
+$secondaryColor: #000000;
 
-
-
-$secondaryColor: #f4f4f4;
+//
 $tertiaryColor: #18335b;
 $quaternaryColor: #d71149;
-$quinaryColor: #d4d4d4;
-$senaryColor: #122656;
-$septenaryColor: #919191;
-$octonaryColor: #919daf;
-$nonaryColor: #44547a;
-$denaryColor: #b9c1cd;
+//
 
-$duodenaryColor: #97d1ff;
+$lightenSecondaryColor: lighten($secondaryColor, 50%);
 
-$vigenaryColor: #9f9f9f;
-
-$lightenQuaternaryColor: darken($quaternaryColor, 5%);
-
-$gradientLeftColor: #102259;
-$gradientRightColor: #164271;
+$darkenPrimaryColor: darken($primaryColor, 20%);
 
 * {
   box-sizing: border-box;
@@ -37,21 +23,84 @@ body {
   text-align: center;
   font-size: 16px;
 
-  
+  h1 {
+    letter-spacing: 7px;
+  }
 
   .container {
     max-width: 1920px;
     margin: 0 auto;
 
+    @media (max-width: 991px) {
+      max-width: 100%;
+    }
+
+    .lines-container {
+      margin-top: 0;
+      padding-bottom: 94px;
+      display: inline-block;
+      position: relative;
+
+      &:after {
+        left: 100%;
+        margin-left: 200px;
+
+        @media (max-width: 767px) {
+          margin-left: 184px;
+        }
+
+        @media (max-width: 640px) {
+          margin-left: 150px;
+        }
+
+        @media (max-width: 479px) {
+          margin-left: 117px;
+        }
+      }
+
+      &::before {
+        right: 100%;
+        margin-right: 200px;
+
+        @media (max-width: 767px) {
+          margin-right: 184px;
+        }
+
+        @media (max-width: 640px) {
+          margin-right: 150px;
+        }
+
+        @media (max-width: 479px) {
+          margin-right: 117px;
+        }
+      }
+
+      &:after,
+      &:before {
+        content: "";
+        position: absolute;
+        height: 2px;
+        border-top: 2px solid $secondaryColor;
+        top: 0;
+        width: 700px;
+      }
+    }
+
+    h2 {
+      font-weight: 600;
+      font-size: 20px;
+      letter-spacing: 4px;
+    }
+
     a {
       &:hover {
-        text-decoration: none;
+        text-decoration: underline;
       }
     }
 
     p {
       line-height: 24px;
+      margin-bottom: 25px;
     }
   }
 }
-

@@ -1,8 +1,12 @@
 .products {
   padding: 50px 0;
 
+  display: none;
+
   .container {
     width: 100%;
+
+    text-shadow: 2px 2px 4px #000000;
 
     .row {
       .col-lg-4 {
