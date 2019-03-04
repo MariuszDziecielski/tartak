@@ -1,54 +1,11 @@
 .services {
-  background: $tertiaryColor url("../img/2.jpeg") no-repeat center/cover;
-  padding: 80px 15px 130px;
+  background: $tertiaryColor url("../img/bg_2.jpg") no-repeat center/cover;
   color: $primaryColor;
-
   text-shadow: 2px 2px 4px #000000;
 
-  @media (max-width: 991px) {
-    padding: 80px 30px 130px;
-  }
-
-  h1 {
-    margin-top: 0;
-    font-weight: 600;
-    font-size: 34px;
-    position: relative;
-    top: 26px;
-
-    @media (max-width: 1800px) {
-      font-size: 32px;
-      line-height: 1.1;
-    }
-
-    @media (max-width: 1599px) {
-      font-size: 30px;
-    }
-
-    @media (max-width: 1366px) {
-      font-size: 28px;
-    }
-  }
-
   .container {
-    border-bottom: 2px solid $primaryColor;
-    border-left: 2px solid $primaryColor;
-    border-right: 2px solid $primaryColor;
-    padding: 0 180px 30px;
-    max-width: 900px;
-    overflow: hidden;
-
-    @media (max-width: 991px) {
-      max-width: 100%;
-    }
-
-    @media (max-width: 767px) {
-      padding: 0 19vw 30px;
-    }
-
-    @media (max-width: 640px) {
-      padding: 0 14vw 30px;
-    }
+    border: 2px solid $primaryColor;
+    border-top: none;
 
     .lines-container {
       &:after,
@@ -56,48 +13,5 @@
         border-top: 2px solid $primaryColor;
       }
     }
-
-    img {
-      width: 70px;
-
-      display: block;
-
-      margin: 0 auto;
-      padding-bottom: 10px;
-
-    }
-
-    i {
-      
-      
-    }
-
-
-    h2 {
-      padding: 20px 0;
-      margin-bottom: 0;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-      
-      li {
-        padding: 10px 0;
-
-        i {
-          padding-right: 10px;
-          font-size: 16px;
-        }
-      }
-    }
-
-    @media (max-width: 991px) {
-
-    }
-
-
-}
-
-
+  }
 }

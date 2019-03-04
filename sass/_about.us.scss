@@ -1,65 +1,7 @@
 .about-us {
-
-
-  padding: 80px 15px 130px;
-  color: $secondaryColor;
-
-  @media (max-width: 991px) {
-    padding: 80px 30px 130px;
-  }
- 
-
-  h1 {
-    margin-top: 0;
-    font-weight: 600;
-    font-size: 34px;
-    position: relative;
-    top: 26px;
-
-    @media (max-width: 1800px) {
-      font-size: 32px;
-      line-height: 1.1;
-    }
-
-    @media (max-width: 1599px) {
-      font-size: 30px;
-    }
-
-    @media (max-width: 1366px) {
-      font-size: 28px;
-    }
-
-  }
-
   .container {
-    border-bottom: 2px solid $secondaryColor;
-    border-left: 2px solid $secondaryColor;
-    border-right: 2px solid $secondaryColor;
-
-    padding: 0 180px 30px;
-
-    max-width: 900px;
-    overflow: hidden;
-
-    @media (max-width: 991px) {
-      max-width: 100%;
-      
-    }
-
-    @media (max-width: 767px) {
-      padding: 0 19vw 30px;
-    }
-
-    @media (max-width: 640px) {
-      padding: 0 14vw 30px;
-    }
-
     .lines-container {
       padding-bottom: 65px;
     }
-
-    
-
   }
-
 }

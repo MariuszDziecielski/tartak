@@ -2,6 +2,8 @@ footer {
   padding: 71px 0;
 
   .container {
+    border: none;
+
     p {
       a {
         color: $secondaryColor;
@@ -11,12 +13,5 @@ footer {
         }
       }
     }
-    @media (max-width: 991px) {
-   
-    }
-
-
-}
-
-
+  }
 }
