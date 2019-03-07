@@ -23,6 +23,33 @@ body section {
   }
 }
 
+body section h2 {
+  margin-top: 0;
+  font: 600 34px "Lato", sans-serif;
+  position: relative;
+  top: 26px;
+  letter-spacing: 7px;
+}
+
+@media (max-width: 1800px) {
+  body section h2 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
+}
+
+@media (max-width: 1599px) {
+  body section h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1366px) {
+  body section h2 {
+    font-size: 28px;
+  }
+}
+
 body section .container {
   padding: 0 180px 30px;
   max-width: 900px;
@@ -48,7 +75,7 @@ body section .container img {
   padding-bottom: 10px;
 }
 
-body section .container h2 {
+body section .container h3 {
   padding: 20px 0;
   font: 600 20px "Lato", sans-serif;
   letter-spacing: 4px;
@@ -66,33 +93,6 @@ body section .container ul li {
 
 body section .container ul li i {
   padding-right: 10px;
-}
-
-body section h1 {
-  margin-top: 0;
-  font: 600 34px "Lato", sans-serif;
-  position: relative;
-  top: 26px;
-  letter-spacing: 7px;
-}
-
-@media (max-width: 1800px) {
-  body section h1 {
-    font-size: 32px;
-    line-height: 1.1;
-  }
-}
-
-@media (max-width: 1599px) {
-  body section h1 {
-    font-size: 30px;
-  }
-}
-
-@media (max-width: 1366px) {
-  body section h1 {
-    font-size: 28px;
-  }
 }
 
 body .container {
