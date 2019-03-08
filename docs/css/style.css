@@ -56,6 +56,12 @@ body section .container {
   overflow: hidden;
 }
 
+@media (max-width: 991px) {
+  body section .container {
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 767px) {
   body section .container {
     padding: 0 19vw 30px;
@@ -180,7 +186,7 @@ body .container p {
 }
 
 header {
-  background: #18335b url("../img/bg_1.jpg") no-repeat center/cover;
+  background: #669966 url("../img/bg_1.jpg") no-repeat center/cover;
   padding: 120px 15px;
   color: #ffffff;
 }
@@ -320,7 +326,7 @@ header .container .icon-scroll:before {
 }
 
 .equipment {
-  background: #18335b url("../img/bg_3.jpg") no-repeat center/cover;
+  background: #669966 url("../img/bg_3.jpg") no-repeat center/cover;
   color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
 }
@@ -351,7 +357,7 @@ header .container .icon-scroll:before {
 }
 
 .services {
-  background: #18335b url("../img/bg_2.jpg") no-repeat center/cover;
+  background: #669966 url("../img/bg_2.jpg") no-repeat center/cover;
   color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
 }

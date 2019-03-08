@@ -4,7 +4,7 @@ $primaryFont: 'Lato', sans-serif;
 
 $primaryColor: #ffffff;
 $secondaryColor: #000000;
-$tertiaryColor: #18335b;
+$tertiaryColor: #669966;
 
 $lightenSecondaryColor: lighten($secondaryColor, 50%);
 $darkenPrimaryColor: darken($primaryColor, 20%);
@@ -49,6 +49,10 @@ body {
       padding: 0 180px 30px;
       max-width: 900px;
       overflow: hidden;
+
+      @media (max-width: 991px) {
+        max-width: 100%;
+      }
 
       @media (max-width: 767px) {
         padding: 0 19vw 30px;
