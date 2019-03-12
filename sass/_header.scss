@@ -21,6 +21,7 @@ header {
 
     @media (max-width: 767px) {
       padding: 0 19vw;
+      padding-top: 50px;
     }
 
     @media (max-width: 640px) {
@@ -29,6 +30,51 @@ header {
 
     @media (max-width: 640px) {
       padding: 0 4vw;
+    }
+
+    .navbar-inverse {
+      background-color: $primaryColor;
+
+      .navbar-header {
+        .navbar-toggle {
+          border-color: inherit;
+
+          &:focus,
+          &:hover {
+            background-color: $primaryColor;
+          }
+
+          .icon-bar {
+            background-color: $secondaryColor;
+            width: 20px;
+            height: 3px;
+          }
+        }
+      }
+
+      .navbar-collapse {
+        .navbar-nav {
+          li {
+            a {
+              color: $secondaryColor;
+              text-shadow: none;
+              font-weight: 600;
+
+              &:focus,
+              &:hover {
+                text-decoration: none;
+              }
+            }
+
+            &.active {
+              a {
+                background-color: $tertiaryColor;
+                color: $primaryColor;
+              }
+            }
+          }
+        }
+      }
     }
 
     h1 {
