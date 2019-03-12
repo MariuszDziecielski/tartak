@@ -215,6 +215,7 @@ header .container {
 @media (max-width: 767px) {
   header .container {
     padding: 0 19vw;
+    padding-top: 50px;
   }
 }
 
@@ -228,6 +229,39 @@ header .container {
   header .container {
     padding: 0 4vw;
   }
+}
+
+header .container .navbar-inverse {
+  background-color: #ffffff;
+}
+
+header .container .navbar-inverse .navbar-header .navbar-toggle {
+  border-color: inherit;
+}
+
+header .container .navbar-inverse .navbar-header .navbar-toggle:focus, header .container .navbar-inverse .navbar-header .navbar-toggle:hover {
+  background-color: #ffffff;
+}
+
+header .container .navbar-inverse .navbar-header .navbar-toggle .icon-bar {
+  background-color: #000000;
+  width: 20px;
+  height: 3px;
+}
+
+header .container .navbar-inverse .navbar-collapse .navbar-nav li a {
+  color: #000000;
+  text-shadow: none;
+  font-weight: 600;
+}
+
+header .container .navbar-inverse .navbar-collapse .navbar-nav li a:focus, header .container .navbar-inverse .navbar-collapse .navbar-nav li a:hover {
+  text-decoration: none;
+}
+
+header .container .navbar-inverse .navbar-collapse .navbar-nav li.active a {
+  background-color: #669966;
+  color: #ffffff;
 }
 
 header .container h1 {
@@ -321,75 +355,75 @@ header .container .icon-scroll:before {
   }
 }
 
-.about-us .container .lines-container {
+#about-us .container .lines-container {
   padding-bottom: 65px;
 }
 
-.equipment {
+#equipment {
   background: #669966 url("../img/bg_3.jpg") no-repeat center/cover;
   color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.equipment .container {
+#equipment .container {
   border: 2px solid #ffffff;
   border-top: none;
 }
 
-.equipment .container .lines-container:after, .equipment .container .lines-container:before {
+#equipment .container .lines-container:after, #equipment .container .lines-container:before {
   border-top: 2px solid #ffffff;
 }
 
-.equipment .container ul li a {
+#equipment .container ul li a {
   color: #ffffff;
 }
 
-.equipment .container ul li a:hover {
+#equipment .container ul li a:hover {
   color: #cccccc;
 }
 
-.price-list .container ul {
+#price-list .container ul {
   padding-bottom: 89px;
 }
 
-.price-list .container ul:last-child {
+#price-list .container ul:last-child {
   padding-bottom: 0;
 }
 
-.services {
+#services {
   background: #669966 url("../img/bg_2.jpg") no-repeat center/cover;
   color: #ffffff;
   text-shadow: 2px 2px 4px #000000;
 }
 
-.services .container {
+#services .container {
   border: 2px solid #ffffff;
   border-top: none;
 }
 
-.services .container .lines-container:after, .services .container .lines-container:before {
+#services .container .lines-container:after, #services .container .lines-container:before {
   border-top: 2px solid #ffffff;
 }
 
-.contact {
+#contact {
   padding: 80px 15px 0;
 }
 
 @media (max-width: 991px) {
-  .contact {
+  #contact {
     padding: 80px 30px 0;
   }
 }
 
-.contact .container .lines-container {
+#contact .container .lines-container {
   padding-bottom: 65px;
 }
 
-.contact .container address a {
+#contact .container address a {
   color: #000000;
 }
 
-.contact .container address a:hover {
+#contact .container address a:hover {
   color: #807f7f;
 }
 
